@@ -22,13 +22,10 @@ export default function SetAvatar() {
     theme: "dark",
   };
 
-  // REVISAR ESTO:
-  // If there's not a user in the local storage then navigate to /login
-  // useEffect( () => {
-  //   if (!localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) 
-  //     navigate("/login");
-  // }, );
-  // "chat-app-user"
+  useEffect(async () => {
+    if (!localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY))
+      navigate("/login");
+  }, []);
 
   const setProfilePicture = async () => {
     if (selectedAvatar === undefined) {
