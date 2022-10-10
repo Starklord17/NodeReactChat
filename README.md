@@ -14,3 +14,6 @@ Socket.io is used to create real-time low-latency connection between server and 
 >\~ npm start or yarn start
 
 - And the chat application would be running successfully by now.
+
+# Deploy
+https://merndevchat.netlify.app/
